@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 5 Notes</title>
+    <style>
+        /*This is how you make a comment in CSS*/
+        /* selector, property, and vlaue*/
+        body{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+        /*you can't use any font you want*/
+        h1{font-size:2em;
+        color:rgb(72, 26, 116);
+        text-decoration:underline
+        }
+        /* you can use units em or % --> do not use pixels or points!*/
+        p{font-weight: 130%;}
+        h2{color:rgb(198, 156, 238);
+        text-decoration: underline;}
+        /*below is a descendent selector - selects a tag insdie of another tag*/
+        p a{color:hotpink;}
+
+        #secondid {color:maroon} /*id selector*/
+        /*this selects naything with a class that has the selector value*/
+        .yellow{color:yellow} /*class selector*/
+    </style>
+</head>
+<body>
+    <h1 class="yellow">CSS: Cascading Style Sheet</h1>
+    <a href="http://www.amazon.com">Amazon</a>
+    <h2>Change Font</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero cupiditate, iure fugiat obcaecati explicabo accusantium sequi, iusto veritatis aut dolor dolorem rerum ex voluptates error ut, mollitia animi blanditiis quae.</p>
+    <p>
+        <a href="http://www.ebay.com">Ebay</a>
+    </p>
+    <h2>Size</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sit doloremque soluta ullam molestiae ad, harum laboriosam consequuntur eaque cumque praesentium quibusdam animi placeat dolore minima, fugit ea ipsa ipsum!</p>
+    <h2 id="secondid">Weight</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, deserunt rerum quod, sunt molestiae dicta quas illum unde cumque, ex veniam reprehenderit hic fugit id consequuntur. Tempore atque aperiam tenetur!</p>
+</body>
+</html>
