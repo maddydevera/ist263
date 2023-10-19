@@ -13,7 +13,14 @@ nav {margin-bottom: 30px;}
 .a {float: right;}
 .clouds{float: left; margin: 0px 20px 0px 0px}
 
-.email .link{float: right; padding:10px}
-.contact1 {padding: 3px; background-color: #c4c4c4; border-radius: .5em;}
-.addy {float: left; flex: 1; padding:10px}
-.email {float: right; flex: 1;}
+.contact1 {margin: 0px 0px 150px 0px; 
+    padding: 3px; 
+    background-color: #c4c4c4; 
+    border-radius: .5em;}
+.addy {float: left; 
+    flex: 1;}
+.email {float: right; 
+    flex: 1;}
+.forms {padding: 3px;
+    background-color: #c4c4c4;
+    border-radius: .5em;}
