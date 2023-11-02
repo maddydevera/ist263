@@ -1,0 +1,53 @@
+body {background-color: #f7f7f7;}
+p {color: #003b37}
+a {color: #018077}
+h1, h2, h3, h4 {color: #46a39d}
+a:hover {color:#003b37}
+.evenrow {background-color: #cae3e1}
+nav {background-color: #cae3e1; padding:10px}
+nav a {color:#003b37}
+nav a:hover {background-color: #46a39d;}
+nav {margin-bottom: 30px;}
+
+
+.a {float: right;}
+.clouds{
+    max-width: 100%;
+}
+
+.contact1 {display: flex;
+    margin: 0px 0px 30px 0px; 
+    padding: 3px; 
+    background-color: #c4c4c4; 
+    border-radius: .5em;}
+.addy {flex: 1;
+    padding: 10px;}
+.email {flex: 1;}
+.contact2 {display: flex;
+    padding: 3px;
+    background-color: #c4c4c4;
+    border-radius: .5em;}
+.box {flex: 1}
+.map {flex: 1;
+    padding: 10px;}
+
+h1 {text-align: center;}
+.blurb {text-align: center;}
+.logos{
+    display: flex;
+    flex: 75%;
+    padding: 20px;
+    justify-content: space-between;
+    text-align: center;
+}
+.other {
+    flex: 25%;
+    background-color: #c4c4c4;
+    border-radius: .5em;
+    padding: 10px;
+}
+.rawr{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 30px 30px 30px;
+}
