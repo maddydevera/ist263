@@ -1,0 +1,191 @@
+/*    <link rel="stylesheet" href="project.css">    */
+
+header{
+    background-color: #ad91b7;
+    margin-bottom: 30px;
+}
+
+body{
+    background-color: #fcf2ff;
+}
+
+.logo{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.mdv{
+    width: 50%;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+.blue {
+    background-color: #ad91b7;
+    margin-bottom: 2px;
+    text-align: right;
+}
+
+nav {
+    background-color: #e7c9ff; 
+    padding:10px;
+    margin-bottom: 30px;
+    font-size: large;
+}
+nav a {color:#38004a}
+nav a:hover {background-color: #ffb1fa;}
+
+section {
+    display: flex;
+}
+
+img {
+    width:80%;
+    margin-top: 20px;
+}
+
+.ithaca{
+    text-align: center;
+    flex-basis: 25%;
+    background-color: #38004a;
+    padding: 10px;
+    margin-right: 8px;
+}
+
+.hawaii{
+    text-align: center;
+    flex-basis: 25%;
+    background-color: #38004a;
+    padding: 10px;
+    margin-right: 8px;
+}
+
+.colorado{
+    text-align: center;
+    flex-basis: 25%;
+    background-color: #38004a;
+    padding: 10px;
+    margin-right: 8px;
+}
+
+.nyc{
+    text-align: center;
+    flex-basis: 25%;
+    background-color: #38004a;
+    padding: 10px;
+}
+
+.scene_title{
+    display: flex;
+}
+
+.pinterest{
+    display:flex;
+}
+
+.music{
+    display: flex;
+
+}
+
+.ithaca2{
+    text-align: center;
+    flex-basis: 25%;
+    background-color: #e7c9ff;
+    padding: 10px;
+    margin-right: 8px;
+    border-radius: 12px;
+}
+
+.hawaii2{
+    text-align: center;
+    flex-basis: 25%;
+    background-color: #e7c9ff;
+    padding: 10px;
+    margin-right: 8px;
+    border-radius: 12px;
+}
+
+.colorado2{
+    text-align: center;
+    flex-basis: 25%;
+    background-color: #e7c9ff;
+    padding: 10px;
+    margin-right: 8px;
+    border-radius: 12px;
+}
+
+.nyc2{
+    text-align: center;
+    flex-basis: 25%;
+    background-color: #e7c9ff;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.diary p, .diary h1{
+    color: #38004a;
+}
+
+.ithaca-container {
+  width: 50%;
+  position: relative;
+  margin: auto;
+}
+
+.hawaii-container {
+    width: 50%;
+    position: relative;
+    margin: auto;
+}
+
+.colorado-container {
+    width: 50%;
+    position: relative;
+    margin: auto;
+}
+.hdiary{
+    display: flex;
+    flex: 25%
+}
+
+footer{
+    background-color: #e7c9ff;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 18px;;
+}
+
+.insta{
+    display: flex;
+    flex-basis: 10%;
+    justify-content: center;
+}
+
+.spot{
+    display: flex;
+    flex-basis: 10%;
+    justify-content: center;
+}
+
+@media only screen and (max-width:500px){
+    nav a{max-width: 100%;
+        display: block;
+        padding: 5px;
+    }
+    nav span{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1400px){
+    .hdiary{max-width: 100%;
+        display: block;
+        padding: 10px;
+    }
+}
