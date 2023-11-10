@@ -82,3 +82,7 @@ h1 {text-align: center;}
 .skip:focus {
     left: 10px; /*brings it back when its been tabbed to*/
 }
+
+.fix{
+    color:#003b37
+}
