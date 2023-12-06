@@ -5,80 +5,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maddy de Vera</title> 
     <link rel="stylesheet" href="project.css"> 
+    <script>
+        function showNav(){
+            document.getElementById("navlinks").style.display = "block";
+        }
+        function hideNav() {
+            document.getElementById("navlinks").style.display = "none";
+        }
+        
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlidesi(n) {
+        let i;
+        let slides = document.getElementsByClassName("ithacaSlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        } 
+        let slideIndex = 1;
+        showSlidesi(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlidesi(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlidesi(slideIndex = n);
+        }
+
+        function showSlidesh(n) {
+        let i;
+        let slides = document.getElementsByClassName("hawaiiSlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        } 
+        let slideIndex = 1;
+        showSlidesh(slideIndex);
+
+        // Next/previous controls
+        function plusSlidesh(n) {
+        showSlidesh(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlidesh(slideIndex = n);
+        }
+
+        function showSlidesc(n) {
+        let i;
+        let slides = document.getElementsByClassName("coloradoSlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        } 
+        let slideIndex = 1;
+        showSlidesc(slideIndex);
+
+        // Next/previous controls
+        function plusSlidesc(n) {
+        showSlidesc(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlidesc(slideIndex = n);
+        }
+
+    </script>
 </head>
 <body>
 
-    <nav class="blue">
+    <section class="blue">
         <a href="#ithaca">Ithaca<span> |   </span></a><a href="#hawaii">Hawaii<span>   |   </span></a><a href="#colorado">Colorado<span>    |   </span></a><a href="#nyc">NYC </a>
+    </section>
+
+    <div class="firstrow">
+        <img id="hamicon" src="../project4/burger.png" alt="hamburger icon" onclick="showNav();">
+        <p id="close" onclick="hideNav();">X</p>
+    </div>
+    <nav id="navlinks">
+        <a href="home.html">Home<span>  |   </span></a>
+        <a href="diary.html">Travel Diary<span>    |   </span></a>
+        <a href="scene.html">Set the Scene</a>
     </nav>
 
-    <nav>
-        <a href="home.html">Home<span>  |   </span></a><a href="diary.html">Travel Diary<span>   |   </span></a><a href="scene.html">Set the Scene</a>
-    </nav>
     <main>
         <div class="diary">
             <article>
                 <div class="ithaca-container">
-                    <div class="mySlides fade">
+                    <div class="ithacaSlides fade">
                         <div class="numbertext">1 / 12</div>
                         <img src="../project4/ithaca/100_0160.JPG" alt="ithaca">
                     </div>
 
-                    <div class="mySlides fade">
+                    <div class="ithacaSlides fade">
                         <div class="numbertext">2 / 12</div>
                         <img src="../project4/ithaca/100_0185.jpg" alt="ithaca">
                     </div>
 
-                    <div class="mySlides fade">
+                    <div class="ithacaSlides fade">
                         <div class="numbertext">3 / 12</div>
                         <img src="../project4/ithaca/100_0226.jpg" alt="ithaca">
                     </div>
 
-                    <div class="mySlides fade">
+                    <div class="ithacaSlides fade">
                         <div class="numbertext">4 / 12</div>
                         <img src="../project4/ithaca/100_0272.jpg" alt="ithaca">
                     </div>
 
-                    <div class="mySlides fade">
+                    <div class="ithacaSlides fade">
                         <div class="numbertext">5 / 12</div>
                         <img src="../project4/ithaca/100_0283.JPG" alt="ithaca">
                     </div>
 
-                    <div class="mySlides fade">
+                    <div class="ithacaSlides fade">
                         <div class="numbertext">6 / 12</div>
                         <img src="../project4/ithaca/IMG_3064.jpg" alt="ithaca">
                     </div>
 
-                    <div class="mySlides fade">
+                    <div class="ithacaSlides fade">
                         <div class="numbertext">7 / 12</div>
                         <img src="../project4/ithaca/IMG_3149.jpg" alt="ithaca">
                     </div>
 
-                    <div class="mySlides fade">
+                    <div class="ithacaSlides fade">
                         <div class="numbertext">8 / 12</div>
                         <img src="../project4/ithaca/IMG_3603.jpg" alt="ithaca">
                     </div>
 
-                    <div class="mySlides fade">
+                    <div class="ithacaSlides fade">
                         <div class="numbertext">9 / 12</div>
                         <img src="../project4/ithaca/IMG_3762.jpg" alt="ithaca">
                     </div>
 
-                    <div class="mySlides fade">
+                    <div class="ithacaSlides fade">
                         <div class="numbertext">10 / 12</div>
                         <img src="../project4/ithaca/IMG_7917.jpg" alt="ithaca">
                     </div>
 
-                    <div class="mySlides fade">
+                    <div class="ithacaSlides fade">
                         <div class="numbertext">11 / 12</div>
                         <img src="../project4/ithaca/IMG_7940.jpg" alt="ithaca">
                     </div>
                     
-                    <div class="mySlides fade">
+                    <div class="ithacaSlides fade">
                         <div class="numbertext">12 / 12</div>
                         <img src="../project4/ithaca/IMG_8263.jpg" alt="ithaca">
                     </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
             
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                    <span class="dot" onclick="currentSlide(9)"></span>
+                    <span class="dot" onclick="currentSlide(10)"></span>
+                    <span class="dot" onclick="currentSlide(11)"></span>
+                    <span class="dot" onclick="currentSlide(12)"></span>
                 </div>
 
                 
@@ -111,47 +243,61 @@
             <article>
 
             <div class="hawaii-container">
-                <div class="mySlides fade">
+                <div class="hawaiiSlides fade">
                     <div class="numbertext">1 / 8</div>
                     <img src="../project4/hawaii/IMG_0061.JPG" alt="hawaii">
                 </div>
 
-                <div class="mySlides fade">
+                <div class="hawaiiSlide fade">
                     <div class="numbertext">2 / 8</div>
                     <img src="../project4/hawaii/IMG_0105.JPG" alt="hawaii">
                 </div>
 
-                <div class="mySlides fade">
+                <div class="hawaiiSlide fade">
                     <div class="numbertext">3 / 8</div>
                     <img src="../project4/hawaii/IMG_0107.JPG" alt="hawaii">
                 </div>
 
-                <div class="mySlides fade">
+                <div class="hawaiiSlide fade">
                     <div class="numbertext">4 / 8</div>
                     <img src="../project4/hawaii/IMG_0150.JPG" alt="hawaii">
                 </div>
 
-                <div class="mySlides fade">
+                <div class="hawaiiSlide fade">
                     <div class="numbertext">5 / 8</div>
                     <img src="../project4/hawaii/IMG_4924.jpg" alt="hawaii">
                 </div>
 
-                <div class="mySlides fade">
+                <div class="hawaiiSlide fade">
                     <div class="numbertext">6 / 8</div>
                     <img src="../project4/hawaii/IMG_4998.jpg" alt="hawaii">
                 </div>
 
-                <div class="mySlides fade">
+                <div class="hawaiiSlide fade">
                     <div class="numbertext">7 / 8</div>
                     <img src="../project4/hawaii/IMG_5120.jpg" alt="hawaii">
                 </div>
 
-                <div class="mySlides fade">
+                <div class="hawaiiSlide fade">
                     <div class="numbertext">8 / 8</div>
                     <img src="../project4/hawaii/IMG_5488.jpg" alt="hawaii">
                 </div>
 
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
         
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
             </div>
 
             <h1 id="hawaii">Hawaii</h1>
@@ -184,119 +330,146 @@
 
                 <div class="diary">
                     <div class="colorado-container">
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">1 / 22</div>
                             <img src="../project4/colorado/100_0086.JPG" alt="colorado">
                         </div>
             
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">2 / 22</div>
                             <img src="../project4/colorado/100_0093.JPG"  alt="colorado">
                         </div>
             
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">3 / 22</div>
                             <img src="../project4/colorado/100_7136.jpg"  alt="colorado">
                         </div>
             
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">4 / 22</div>
                             <img src="../project4/colorado/IMG_7149.jpg"  alt="colorado">
                         </div>
             
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">5 / 22</div>
                             <img src="../project4/colorado/IMG_7155.jpg" alt="colorado">
                         </div>
             
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">6 / 22</div>
                             <img src="../project4/colorado/IMG_7166.jpg" alt="colorado">
                         </div>
             
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">7 / 22</div>
                             <img src="../project4/colorado/IMG_7186.jpg" alt="colorado">
                         </div>
             
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">8 / 22</div>
                             <img src="../project4/colorado/IMG_7315.jpg" alt="colorado">
                         </div>
             
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">9 / 22</div>
                             <img src="../project4/colorado/IMG_7396.jpg"  alt="colorado">
                         </div>
             
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">10 / 22</div>
                             <img src="../project4/colorado/IMG_7431.jpg" alt="colorado">
                         </div>
             
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">11 / 22</div>
                             <img src="../project4/colorado/IMG_7315.jpg"  alt="colorado">
                         </div>
                         
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">12 / 22</div>
                             <img src="../project4/colorado/IMG_7396.jpg" alt="colorado">
                         </div>
 
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">13 / 22</div>
                             <img src="../project4/colorado/IMG_7431.jpg" alt="colorado">
                         </div>
             
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">14 / 22</div>
                             <img src="../project4/colorado/IMG_7519.JPG" alt="colorado">
                         </div>
             
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">15 / 22</div>
                             <img src="../project4/colorado/IMG_7536.JPG" alt="colorado">
                         </div>
                         
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">16 / 22</div>
                             <img src="../project4/colorado/IMG_7820.jpg" alt="colorado">
                         </div>
 
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">17 / 22</div>
                             <img src="../project4/concerts/ts/100_0072.JPG"  alt="eras tour">
                         </div>
                         
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">18 / 22</div>
                             <img src="../project4/concerts/ts/100_0073.JPG"  alt="eras tour">
                         </div>
 
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">19 / 22</div>
                             <img src="../project4/concerts/ts/100_0079.JPG"  alt="eras tour">
                         </div>
             
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">20 / 22</div>
                             <img src="../project4/concerts/ts/IMG_7108.jpg" alt="eras tour">
                         </div>
             
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">21 / 22</div>
                             <img src="../project4/concerts/ts/IMG_7483.jpg"  alt="eras tour">
                         </div>
                         
-                        <div class="mySlides fade">
+                        <div class="coloradoSlides fade">
                             <div class="numbertext">22 / 22</div>
                             <img src="../project4/concerts/ts/IMG_7517.JPG"  alt="eras tour">
                         </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
                 
                     </div>
-
-                </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
+                        <span class="dot" onclick="currentSlide(8)"></span>
+                        <span class="dot" onclick="currentSlide(9)"></span>
+                        <span class="dot" onclick="currentSlide(10)"></span>
+                        <span class="dot" onclick="currentSlide(11)"></span>
+                        <span class="dot" onclick="currentSlide(12)"></span>
+                        <span class="dot" onclick="currentSlide(13)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(15)"></span>
+                        <span class="dot" onclick="currentSlide(16"></span>
+                        <span class="dot" onclick="currentSlide(17)"></span>
+                        <span class="dot" onclick="currentSlide(18)"></span>
+                        <span class="dot" onclick="currentSlide(19)"></span>
+                        <span class="dot" onclick="currentSlide(20)"></span>
+                        <span class="dot" onclick="currentSlide(21)"></span>
+                        <span class="dot" onclick="currentSlide(22)"></span>
+                    </div>
 
                 <h1 id="colorado">Colorado</h1>
                 <p>

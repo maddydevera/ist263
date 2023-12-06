@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maddy de Vera</title> 
     <link rel="stylesheet" href="project.css"> 
+    <script>
+        function showNav(){
+            document.getElementById("navlinks").style.display = "block";
+        }
+        function hideNav() {
+            document.getElementById("navlinks").style.display = "none";
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -13,8 +21,14 @@
         </div>
     </header>
 
-    <nav>
-        <a href="home.html">Home  |   </a><a href="diary.html">Travel Diary    |   </a><a href="scene.html">Set the Scene</a>
+    <div class="firstrow">
+        <img id="hamicon" src="../project4/burger.png" alt="hamburger icon" onclick="showNav();">
+        <p id="close" onclick="hideNav();">X</p>
+    </div>
+    <nav id="navlinks">
+        <a href="home.html">Home<span>  |   </span></a>
+        <a href="diary.html">Travel Diary<span>    |   </span></a>
+        <a href="scene.html">Set the Scene</a>
     </nav>
 
     <caption>
