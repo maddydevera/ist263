@@ -6,111 +6,16 @@
     <title>Maddy de Vera</title> 
     <link rel="stylesheet" href="project.css"> 
     <script>
+        
+
         function showNav(){
             document.getElementById("navlinks").style.display = "block";
         }
         function hideNav() {
             document.getElementById("navlinks").style.display = "none";
         }
-        
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
-        }
-
-        function showSlidesi(n) {
-        let i;
-        let slides = document.getElementsByClassName("ithacaSlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        } 
-        let slideIndex = 1;
-        showSlidesi(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-        showSlidesi(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-        showSlidesi(slideIndex = n);
-        }
-
-        function showSlidesh(n) {
-        let i;
-        let slides = document.getElementsByClassName("hawaiiSlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        } 
-        let slideIndex = 1;
-        showSlidesh(slideIndex);
-
-        // Next/previous controls
-        function plusSlidesh(n) {
-        showSlidesh(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-        showSlidesh(slideIndex = n);
-        }
-
-        function showSlidesc(n) {
-        let i;
-        let slides = document.getElementsByClassName("coloradoSlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        } 
-        let slideIndex = 1;
-        showSlidesc(slideIndex);
-
-        // Next/previous controls
-        function plusSlidesc(n) {
-        showSlidesc(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-        showSlidesc(slideIndex = n);
-        }
-
     </script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
 
@@ -127,7 +32,7 @@
         <a href="diary.html">Travel Diary<span>    |   </span></a>
         <a href="scene.html">Set the Scene</a>
     </nav>
-
+    <br>
     <main>
         <div class="diary">
             <article>

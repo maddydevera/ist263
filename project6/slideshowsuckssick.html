@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        } 
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+    </script>
+    <style>
+        
+        .ithaca-container {
+        width: 50%;
+        position: relative;
+        margin: auto;
+        }
+
+        .hawaii-container {
+            width: 50%;
+            position: relative;
+            margin: auto;
+        }
+
+        .colorado-container {
+            width: 50%;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: #000000;
+        }
+    
+        
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+        img {
+            width:80%;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+                <div class="ithaca-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 12</div>
+                        <img src="../project4/ithaca/100_0160.JPG" alt="ithaca">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 12</div>
+                        <img src="../project4/ithaca/100_0185.jpg" alt="ithaca">
+                    </div>
+
+                    <div class="mySlidess fade">
+                        <div class="numbertext">3 / 12</div>
+                        <img src="../project4/ithaca/100_0226.jpg" alt="ithaca">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 12</div>
+                        <img src="../project4/ithaca/100_0272.jpg" alt="ithaca">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 12</div>
+                        <img src="../project4/ithaca/100_0283.JPG" alt="ithaca">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">6 / 12</div>
+                        <img src="../project4/ithaca/IMG_3064.jpg" alt="ithaca">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">7 / 12</div>
+                        <img src="../project4/ithaca/IMG_3149.jpg" alt="ithaca">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">8 / 12</div>
+                        <img src="../project4/ithaca/IMG_3603.jpg" alt="ithaca">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">9 / 12</div>
+                        <img src="../project4/ithaca/IMG_3762.jpg" alt="ithaca">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">10 / 12</div>
+                        <img src="../project4/ithaca/IMG_7917.jpg" alt="ithaca">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">11 / 12</div>
+                        <img src="../project4/ithaca/IMG_7940.jpg" alt="ithaca">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <div class="numbertext">12 / 12</div>
+                        <img src="../project4/ithaca/IMG_8263.jpg" alt="ithaca">
+                    </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                    <span class="dot" onclick="currentSlide(9)"></span>
+                    <span class="dot" onclick="currentSlide(10)"></span>
+                    <span class="dot" onclick="currentSlide(11)"></span>
+                    <span class="dot" onclick="currentSlide(12)"></span>
+                </div>
+
+                
+            <h1 id="ithaca">Ithaca</h1>
+
+            <br>
+
+            <hr>
+
+            <div class="hawaii-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 8</div>
+                    <img src="../project4/hawaii/IMG_0061.JPG" alt="hawaii">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 8</div>
+                    <img src="../project4/hawaii/IMG_0105.JPG" alt="hawaii">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 8</div>
+                    <img src="../project4/hawaii/IMG_0107.JPG" alt="hawaii">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 8</div>
+                    <img src="../project4/hawaii/IMG_0150.JPG" alt="hawaii">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 8</div>
+                    <img src="../project4/hawaii/IMG_4924.jpg" alt="hawaii">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 8</div>
+                    <img src="../project4/hawaii/IMG_4998.jpg" alt="hawaii">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 8</div>
+                    <img src="../project4/hawaii/IMG_5120.jpg" alt="hawaii">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">8 / 8</div>
+                    <img src="../project4/hawaii/IMG_5488.jpg" alt="hawaii">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+            </div>
+
+            <h1 id="hawaii">Hawaii</h1>
+           
+            <hr>
+            <br>
+
+                    <div class="colorado-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 22</div>
+                            <img src="../project4/colorado/100_0086.JPG" alt="colorado">
+                        </div>
+            
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 22</div>
+                            <img src="../project4/colorado/100_0093.JPG"  alt="colorado">
+                        </div>
+            
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 22</div>
+                            <img src="../project4/colorado/100_7136.jpg"  alt="colorado">
+                        </div>
+            
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 22</div>
+                            <img src="../project4/colorado/IMG_7149.jpg"  alt="colorado">
+                        </div>
+            
+                        <div class="mySlides fade">
+                            <div class="numbertext">5 / 22</div>
+                            <img src="../project4/colorado/IMG_7155.jpg" alt="colorado">
+                        </div>
+            
+                        <div class="mySlides fade">
+                            <div class="numbertext">6 / 22</div>
+                            <img src="../project4/colorado/IMG_7166.jpg" alt="colorado">
+                        </div>
+            
+                        <div class="mySlides fade">
+                            <div class="numbertext">7 / 22</div>
+                            <img src="../project4/colorado/IMG_7186.jpg" alt="colorado">
+                        </div>
+            
+                        <div class="mySlides fade">
+                            <div class="numbertext">8 / 22</div>
+                            <img src="../project4/colorado/IMG_7315.jpg" alt="colorado">
+                        </div>
+            
+                        <div class="mySlides fade">
+                            <div class="numbertext">9 / 22</div>
+                            <img src="../project4/colorado/IMG_7396.jpg"  alt="colorado">
+                        </div>
+            
+                        <div class="mySlides fade">
+                            <div class="numbertext">10 / 22</div>
+                            <img src="../project4/colorado/IMG_7431.jpg" alt="colorado">
+                        </div>
+            
+                        <div class="mySlides fade">
+                            <div class="numbertext">11 / 22</div>
+                            <img src="../project4/colorado/IMG_7315.jpg"  alt="colorado">
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <div class="numbertext">12 / 22</div>
+                            <img src="../project4/colorado/IMG_7396.jpg" alt="colorado">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">13 / 22</div>
+                            <img src="../project4/colorado/IMG_7431.jpg" alt="colorado">
+                        </div>
+            
+                        <div class="mySlides fade">
+                            <div class="numbertext">14 / 22</div>
+                            <img src="../project4/colorado/IMG_7519.JPG" alt="colorado">
+                        </div>
+            
+                        <div class="mySlides fade">
+                            <div class="numbertext">15 / 22</div>
+                            <img src="../project4/colorado/IMG_7536.JPG" alt="colorado">
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <div class="numbertext">16 / 22</div>
+                            <img src="../project4/colorado/IMG_7820.jpg" alt="colorado">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">17 / 22</div>
+                            <img src="../project4/concerts/ts/100_0072.JPG"  alt="eras tour">
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <div class="numbertext">18 / 22</div>
+                            <img src="../project4/concerts/ts/100_0073.JPG"  alt="eras tour">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">19 / 22</div>
+                            <img src="../project4/concerts/ts/100_0079.JPG"  alt="eras tour">
+                        </div>
+            
+                        <div class="mySlides fade">
+                            <div class="numbertext">20 / 22</div>
+                            <img src="../project4/concerts/ts/IMG_7108.jpg" alt="eras tour">
+                        </div>
+            
+                        <div class="mySlides fade">
+                            <div class="numbertext">21 / 22</div>
+                            <img src="../project4/concerts/ts/IMG_7483.jpg"  alt="eras tour">
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <div class="numbertext">22 / 22</div>
+                            <img src="../project4/concerts/ts/IMG_7517.JPG"  alt="eras tour">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
+                        <span class="dot" onclick="currentSlide(8)"></span>
+                        <span class="dot" onclick="currentSlide(9)"></span>
+                        <span class="dot" onclick="currentSlide(10)"></span>
+                        <span class="dot" onclick="currentSlide(11)"></span>
+                        <span class="dot" onclick="currentSlide(12)"></span>
+                        <span class="dot" onclick="currentSlide(13)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(15)"></span>
+                        <span class="dot" onclick="currentSlide(16"></span>
+                        <span class="dot" onclick="currentSlide(17)"></span>
+                        <span class="dot" onclick="currentSlide(18)"></span>
+                        <span class="dot" onclick="currentSlide(19)"></span>
+                        <span class="dot" onclick="currentSlide(20)"></span>
+                        <span class="dot" onclick="currentSlide(21)"></span>
+                        <span class="dot" onclick="currentSlide(22)"></span>
+                    </div>
+
+                <h1 id="colorado">Colorado</h1>
+
+            <hr>
+                <h1 id="nyc">New York City</h1>
+                <p>
+                    Coming soon!!
+                </p>
+</body>
+</html>
