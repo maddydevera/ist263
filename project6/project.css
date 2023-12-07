@@ -1,5 +1,7 @@
 /*    <link rel="stylesheet" href="project.css">    */
  
+h1, h2, h3 {font-family: 'Oswald', sans-serif;}
+
 header{
     background-color: #ad91b7;
     margin-bottom: 30px;
