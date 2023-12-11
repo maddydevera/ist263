@@ -83,14 +83,18 @@ img {
 
 .scene_title{
     display: flex;
+    justify-content: space-between;
 }
 
 .pinterest{
     display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .music{
     display: flex;
+    justify-content: space-between;
 
 }
 
@@ -287,4 +291,46 @@ footer{
         border: 1px solid #333333;
     }
     #navlinks {display: none;}
+}
+
+@media only screen and (max-width: 799px){
+    .mySlides img {
+        width: 180%; /* Adjust this value as needed */
+        margin-top: 20px;
+        border: 1px solid #ddd; /* Add border for clarity */
+        border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .scene_title {
+        flex-direction: column;
+    }
+
+    .ithaca,
+    .hawaii,
+    .colorado,
+    .nyc {
+        text-align: center;
+        flex-basis: 100%;
+        background-color: #38004a;
+        padding: 10px;
+        margin-bottom: 10px; /* Adjust the margin as needed */
+    }
+
+    .ithaca2,
+    .hawaii2,
+    .colorado2,
+    .nyc2 {
+        text-align: center;
+        flex-basis: 100%;
+        background-color: #e7c9ff;
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    .pinterest {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
 }

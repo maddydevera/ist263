@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <style>
+        /* Your styles here */
+        .ithaca-container,
+        .hawaii-container,
+        .colorado-container {
+            width: 50%;
+            position: relative;
+            margin: auto;
+        }
+
+
+        .mySlides {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .mySlides img {
+            width: 80%; /* Adjust this value as needed */
+            margin-top: 20px;
+            border: 1px solid #ddd; /* Add border for clarity */
+            border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+        }
+
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: #000000;
+        }
+    
+        
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+    
+        .slideshow-container {
+            width: 30%;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            width: 30%;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        /* Your other styles here */
+    </style>
+    <script>
+        let slideIndex = {
+            ithaca: 0,
+            hawaii: 0,
+            colorado: 0
+        };
+
+        function plusSlides(n, container) {
+            showSlides(slideIndex[container] += n, container);
+        }
+
+        function currentSlide(n, container) {
+            showSlides(slideIndex[container] = n - 1, container);
+        }
+
+        function showSlides(n, container) {
+            let i;
+            let slides = document.querySelectorAll(`.${container}-container .mySlides`);
+            let dots = document.querySelectorAll(`.${container}-container .dot`);
+            
+            if (n >= slides.length) {
+                slideIndex[container] = 0;
+            }
+            if (n < 0) {
+                slideIndex[container] = slides.length - 1;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            
+            slides[slideIndex[container]].style.display = "block";
+            dots[slideIndex[container]].className += " active";
+        }
+
+        // Initialize slideshows on page load
+        showSlides(slideIndex.ithaca, 'ithaca');
+        showSlides(slideIndex.hawaii, 'hawaii');
+        showSlides(slideIndex.colorado, 'colorado');
+    </script>
+</head>
+<body>
+    <div class="ithaca-container slideshow-container">
+        <!-- Your ithaca slides here -->
+        <div class="mySlides fade" style="display: block;">
+            <div class="numbertext">1 / 12</div>
+            <img src="../project4/ithaca/100_0160.JPG" alt="ithaca">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 12</div>
+            <img src="../project4/ithaca/100_0185.jpg" alt="ithaca">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 12</div>
+            <img src="../project4/ithaca/100_0226.jpg" alt="ithaca">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 12</div>
+            <img src="../project4/ithaca/100_0272.jpg" alt="ithaca">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 12</div>
+            <img src="../project4/ithaca/100_0283.JPG" alt="ithaca">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 12</div>
+            <img src="../project4/ithaca/IMG_3064.jpg" alt="ithaca">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 12</div>
+            <img src="../project4/ithaca/IMG_3149.jpg" alt="ithaca">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 12</div>
+            <img src="../project4/ithaca/IMG_3603.jpg" alt="ithaca">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">9 / 12</div>
+            <img src="../project4/ithaca/IMG_3762.jpg" alt="ithaca">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">10 / 12</div>
+            <img src="../project4/ithaca/IMG_7917.jpg" alt="ithaca">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">11 / 12</div>
+            <img src="../project4/ithaca/IMG_7940.jpg" alt="ithaca">
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">12 / 12</div>
+            <img src="../project4/ithaca/IMG_8264.jpg" alt="ithaca">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 'ithaca')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'ithaca')">&#10095;</a>
+
+        <br>
+
+        <div style="text-align:center">
+            <!-- Dots for ithaca slides -->
+            <span class="dot" onclick="currentSlide(1, 'ithaca')"></span>
+            <span class="dot" onclick="currentSlide(2, 'ithaca')"></span>
+            <span class="dot" onclick="currentSlide(3, 'ithaca')"></span>
+            <span class="dot" onclick="currentSlide(4, 'ithaca')"></span>
+            <span class="dot" onclick="currentSlide(5, 'ithaca')"></span>
+            <span class="dot" onclick="currentSlide(6, 'ithaca')"></span>
+            <span class="dot" onclick="currentSlide(7, 'ithaca')"></span>
+            <span class="dot" onclick="currentSlide(8, 'ithaca')"></span>
+            <span class="dot" onclick="currentSlide(9, 'ithaca')"></span>
+            <span class="dot" onclick="currentSlide(10, 'ithaca')"></span>
+            <span class="dot" onclick="currentSlide(11, 'ithaca')"></span>
+            <span class="dot" onclick="currentSlide(12, 'ithaca')"></span>
+        </div>
+
+        <h1 id="ithaca">Ithaca</h1>
+
+    </div>
+
+    <div class="hawaii-container slideshow-container">
+        <!-- Your hawaii slides here -->
+        <div class="mySlides fade" style="display: block;">
+            <div class="numbertext">1 / 8</div>
+            <img src="../project4/hawaii/IMG_0061.JPG" alt="hawaii">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 8</div>
+            <img src="../project4/hawaii/IMG_0105.JPG" alt="hawaii">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 8</div>
+            <img src="../project4/hawaii/IMG_0107.JPG" alt="hawaii">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 8</div>
+            <img src="../project4/hawaii/IMG_0150.JPG" alt="hawaii">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 8</div>
+            <img src="../project4/hawaii/IMG_4924.jpg" alt="hawaii">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 8</div>
+            <img src="../project4/hawaii/IMG_4998.jpg" alt="hawaii">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 8</div>
+            <img src="../project4/hawaii/IMG_5120.jpg" alt="hawaii">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 8</div>
+            <img src="../project4/hawaii/IMG_5488.jpg" alt="hawaii">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 'hawaii')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'hawaii')">&#10095;</a>
+       
+        <br>
+
+        <div style="text-align:center">
+            <!-- Dots for hawaii slides -->
+            <span class="dot" onclick="currentSlide(1, 'hawaii')"></span>
+            <span class="dot" onclick="currentSlide(2, 'hawaii')"></span>
+            <span class="dot" onclick="currentSlide(3, 'hawaii')"></span>
+            <span class="dot" onclick="currentSlide(4, 'hawaii')"></span>
+            <span class="dot" onclick="currentSlide(5, 'hawaii')"></span>
+            <span class="dot" onclick="currentSlide(6, 'hawaii')"></span>
+            <span class="dot" onclick="currentSlide(7, 'hawaii')"></span>
+            <span class="dot" onclick="currentSlide(8, 'hawaii')"></span>
+        </div>
+
+        <h1 id="hawaii">Hawaii</h1>
+
+    </div>
+
+    <div class="colorado-container slideshow-container">
+        <!-- Your colorado slides here -->
+        <div class="mySlides fade" style="display: block;">
+            <div class="numbertext">1 / 22</div>
+            <img src="../project4/colorado/100_0086.JPG" alt="colorado">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 22</div>
+            <img src="../project4/colorado/100_0093.JPG"  alt="colorado">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 22</div>
+            <img src="../project4/colorado/IMG_7136.jpg"  alt="colorado">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 22</div>
+            <img src="../project4/colorado/IMG_7149.jpg"  alt="colorado">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 22</div>
+            <img src="../project4/colorado/IMG_7155.jpg" alt="colorado">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 22</div>
+            <img src="../project4/colorado/IMG_7166.jpg" alt="colorado">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 22</div>
+            <img src="../project4/colorado/IMG_7186.jpg" alt="colorado">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 22</div>
+            <img src="../project4/colorado/IMG_7315.jpg" alt="colorado">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">9 / 22</div>
+            <img src="../project4/colorado/IMG_7396.jpg"  alt="colorado">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">10 / 22</div>
+            <img src="../project4/colorado/IMG_7431.jpg" alt="colorado">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">11 / 22</div>
+            <img src="../project4/colorado/IMG_7315.jpg"  alt="colorado">
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">12 / 22</div>
+            <img src="../project4/colorado/IMG_7396.jpg" alt="colorado">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">13 / 22</div>
+            <img src="../project4/colorado/IMG_7431.jpg" alt="colorado">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">14 / 22</div>
+            <img src="../project4/colorado/IMG_7519.JPG" alt="colorado">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">15 / 22</div>
+            <img src="../project4/colorado/IMG_7536.JPG" alt="colorado">
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">16 / 22</div>
+            <img src="../project4/colorado/IMG_7820.jpg" alt="colorado">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">17 / 22</div>
+            <img src="../project4/concerts/ts/100_0072.JPG"  alt="eras tour">
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">18 / 22</div>
+            <img src="../project4/concerts/ts/100_0073.JPG"  alt="eras tour">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">19 / 22</div>
+            <img src="../project4/concerts/ts/100_0079.JPG"  alt="eras tour">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">20 / 22</div>
+            <img src="../project4/concerts/ts/IMG_7108.jpg" alt="eras tour">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">21 / 22</div>
+            <img src="../project4/concerts/ts/IMG_7483.jpg"  alt="eras tour">
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">22 / 22</div>
+            <img src="../project4/concerts/ts/IMG_7517.JPG"  alt="eras tour">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 'colorado')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'colorado')">&#10095;</a>
+
+        <br>
+
+        <div style="text-align:center">
+            <!-- Dots for colorado slides -->
+            <span class="dot" onclick="currentSlide(1, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(2, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(3, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(4, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(5, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(6, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(7, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(8, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(9, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(10, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(11, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(12, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(13, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(14, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(15, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(16, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(17, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(18, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(19, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(20, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(21, 'colorado')"></span>
+            <span class="dot" onclick="currentSlide(22, 'colorado')"></span>
+        </div>
+
+        <h1 id="colorado">Colorado</h1>
+
+    </div>
+
+    <hr>
+    <h1 id="nyc">New York City</h1>
+    <p>
+        Coming soon!!
+    </p>
+</body>
+</html>
