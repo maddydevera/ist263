@@ -27,7 +27,7 @@ body{
 }
 
 .blue {
-    background-color: #ad91b7;
+    background-color: #e7c9ff;
     margin-bottom: 2px;
     text-align: right;
 }
@@ -167,7 +167,7 @@ img {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: #ffffff;
+    color: #310046;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
