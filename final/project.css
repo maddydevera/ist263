@@ -98,39 +98,40 @@ img {
 
 }
 
-.ithaca2{
+.ithaca .ithaca2{
     text-align: center;
     flex-basis: 25%;
     background-color: #e7c9ff;
     padding: 10px;
-    margin-right: 8px;
     border-radius: 12px;
+    display: block;
 }
 
-.hawaii2{
+.hawaii .hawaii2{
     text-align: center;
     flex-basis: 25%;
     background-color: #e7c9ff;
     padding: 10px;
-    margin-right: 8px;
     border-radius: 12px;
+    display: block;
 }
 
-.colorado2{
+.colorado .colorado2{
     text-align: center;
     flex-basis: 25%;
     background-color: #e7c9ff;
     padding: 10px;
-    margin-right: 8px;
     border-radius: 12px;
+    display: block;
 }
 
-.nyc2{
+.nyc .nyc2{
     text-align: center;
     flex-basis: 25%;
     background-color: #e7c9ff;
-    padding: 8px;
+    padding: 10px;
     border-radius: 12px;
+    display: block;
 }
 
 .diary p, .diary h1{
@@ -317,20 +318,26 @@ footer{
         margin-bottom: 10px; /* Adjust the margin as needed */
     }
 
-    .ithaca2,
-    .hawaii2,
-    .colorado2,
-    .nyc2 {
-        text-align: center;
-        flex-basis: 100%;
-        background-color: #e7c9ff;
-        padding: 10px;
-        border-radius: 12px;
-    }
 
     .pinterest {
         display: flex;
         justify-content: space-between;
         margin-bottom: 10px;
     }
+}
+
+.skip{
+    background-color: #38004a;
+    padding: 5px;
+    border: 1px solid #d089e3;
+    text-decoration: none;
+    border-radius: 8px;
+
+    position: absolute; /*positions an element relative to the top left of the viewport*/
+    top: 10px;
+    left:-999px; /*pushes it off the left side of the screen*/
+}
+
+.skip:focus {
+    left: 10px; /*brings it back when its been tabbed to*/
 }
