@@ -279,7 +279,10 @@ footer{
     }
 }
 
-#close {cursor: pointer;}
+#close {
+    cursor: pointer;
+    color:#310046
+}
 #hamicon {width: 40px;}
 .firstrow {display: flex; justify-content: space-between;}
 @media only screen and (min-width: 800px){
