@@ -327,12 +327,12 @@ footer{
 }
 
 .skip{
-    background-color: #38004a;
+    background-color: #ffffff;
     padding: 5px;
     border: 1px solid #d089e3;
     text-decoration: none;
     border-radius: 8px;
-    color:#fcf2ff
+    color:#fcf2ff;
 
     position: absolute; /*positions an element relative to the top left of the viewport*/
     top: 10px;
