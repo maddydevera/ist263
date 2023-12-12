@@ -332,6 +332,7 @@ footer{
     border: 1px solid #d089e3;
     text-decoration: none;
     border-radius: 8px;
+    color:#fcf2ff
 
     position: absolute; /*positions an element relative to the top left of the viewport*/
     top: 10px;
